@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+      words: ["Professional Coder.", "Full Stack Developer.", "Mobile Application Developer."],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -15,7 +15,7 @@ const LeftBanner = () => {
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">M Hafeex</span>
+          Hi, I'm <span className="text-designColor capitalize">M Hafeed</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
@@ -26,9 +26,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-        Lorem Ipsum is simply dummy text of the printing and typesetting 
-        industry. Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s, when an unknown printer took a galley
+        You're a full-stack developer, meaning you work on both the front-end
+         (user interface) and back-end (server, database) of web applications.
+          You handle everything from designing user interactions to managing 
+          databases and server logic.
         </p>
       </div>
      {/* Media */}

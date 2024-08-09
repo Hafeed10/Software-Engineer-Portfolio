@@ -9,15 +9,30 @@ const Media = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
+          <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaFacebookF />
+      </a>
+      <a
+        href="https://www.twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaTwitter />
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaLinkedinIn />
+      </a>
           </div>
         </div>
         <div>
@@ -25,18 +40,38 @@ const Media = () => {
             BEST SKILL ON
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaReact />
-            </span>
-            <span className="bannerIcon">
-              <SiPython />
-            </span>
-            <span className="bannerIcon">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiCss3 />
-            </span>
+          <a
+        href="https://reactjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaReact />
+      </a>
+      <a
+        href="https://www.python.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <SiPython />
+      </a>
+      <a
+        href="https://tailwindcss.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <SiTailwindcss />
+      </a>
+      <a
+        href="https://www.w3.org/Style/CSS/Overview.en.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <SiCss3 />
+      </a>
           </div>
         </div>
       </div>
