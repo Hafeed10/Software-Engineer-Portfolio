@@ -29,10 +29,13 @@ const Education = () => {
             des="Steyp is a Digital University for students to learn and become Computer Engineers and Tech Scientists irrespective of their age or educational background."
           />
           <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kombam Secondary School (2009 - 2019)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            title="CYRA- Technology & Information"
+            subTitle="Tech Degree (2024)"
+            result="6.00/5"
+            des="
+              Flutter is an open-source UI software development toolkit created by Google.
+              It is used to build natively compiled applications for mobile, web, and desktop
+              from a single codebase. Flutter is built using the Dart programming language."
           />
         </div>
       </div>
