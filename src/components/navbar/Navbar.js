@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        {/* <img className='rounded-full p-4 w-40' src={logo} alt="logo" /> */}
-        <h1 className='font-bold text-3xl'>HAFEED</h1>
+        {/* <img className='w-full rounded-full p-4 ' src={logo} alt="logo" /> */}
+        <h1 className='font-titleFont text-3xl'>HAFEED</h1>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -46,9 +46,10 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                Software engineers apply engineering principles and knowledge of programming 
+                languages to build software solutions for end users. Software engineers design
+                 and develop computer games, business applications, operating systems, networkcontrol
+                  systems, and middleware—to name just a few of the many career paths available.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -76,15 +77,30 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaFacebookF />
+      </a>
+      <a
+        href="https://www.twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaTwitter />
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bannerIcon"
+      >
+        <FaLinkedinIn />
+      </a>
                 </div>
               </div>
               <span
