@@ -26,7 +26,7 @@ const Media = () => {
         <FaTwitter />
       </a>
       <a
-        href="https://www.linkedin.com"
+        href="https://www.linkedin.com/in/muhammed-hafeed-2ba950312/"
         target="_blank"
         rel="noopener noreferrer"
         className="bannerIcon"
