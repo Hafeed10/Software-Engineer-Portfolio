@@ -110,9 +110,9 @@ const Testimonial = () => {
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Bound - Trolola
                   </p>
-                  <h3 className="text-2xl font-bold">Hafeed</h3>
+                  <h3 className="text-2xl font-bold">Musthafa</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                  Software Engineer / Designer
+                  Front-end Developer / Designer
                   </p>
                 </div>
               </div>
@@ -159,9 +159,9 @@ const Testimonial = () => {
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Bound - Trolola
                   </p>
-                  <h3 className="text-2xl font-bold">Thasneem</h3>
+                  <h3 className="text-2xl font-bold">Muhammed</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                  Developer / Designer
+                  FullStack Developer / Designer
                   </p>
                 </div>
               </div>
@@ -207,9 +207,9 @@ const Testimonial = () => {
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                     Bound - Trolola
                   </p>
-                  <h3 className="text-2xl font-bold">Aslam </h3>
+                  <h3 className="text-2xl font-bold">Rashid</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                  Front-end web developer / Designer
+                   Designer
                   </p>
                 </div>
               </div>
