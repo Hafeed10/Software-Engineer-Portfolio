@@ -30,12 +30,6 @@ export const featuresData = [
     des: "Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Hence, the mobile development process involves creating installable software bundles (code, binaries, assets, etc.) , implementing backend services such as data access with an API, and testing the application on target devices.",
   },
   {
-    id: 5,
-    icon: <SiAntdesign />,
-    title: "UI/UX Design",
-    des: "Content in UX/UI design is the language that appears in a user interface. Content design, sometimes called UX writing, is essentially designing with words. The word “content” typically refers to information, images, videos, text, etc., that are included as a part of something, such as a website.",
-  },
-  {
     id: 6,
     icon: <FaGithub />,
     title: "Hosting Websites",
