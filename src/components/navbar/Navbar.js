@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between md:px-24 px-2 space-x-10 items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
         {/* <img className='w-full rounded-full p-4 ' src={logo} alt="logo" /> */}
-        <h1 className="font-titleFont text-3xl">HAFEED</h1>
+        <h1 className="font-titleFont text-3xl">M.HAFEED</h1>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
