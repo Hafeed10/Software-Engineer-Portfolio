@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
-import { navLinksdata } from '../../constants';
+import { logo } from "../../assets/index";
+import { navLinksdata } from "../../constants";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between px-32 space-x-6 items-center font-titleFont border-b-[1px] border-b-gray-600">
+    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between md:px-24 px-2 space-x-10 items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
         {/* <img className='w-full rounded-full p-4 ' src={logo} alt="logo" /> */}
-        <h1 className='font-titleFont text-3xl mr-8'>HAFEEX</h1>
+        <h1 className="font-titleFont text-3xl">HAFEED</h1>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -46,10 +46,12 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                Software engineers apply engineering principles and knowledge of programming 
-                languages to build software solutions for end users. Software engineers design
-                 and develop computer games, business applications, operating systems, networkcontrol
-                  systems, and middleware—to name just a few of the many career paths available.
+                  Software engineers apply engineering principles and knowledge
+                  of programming languages to build software solutions for end
+                  users. Software engineers design and develop computer games,
+                  business applications, operating systems, networkcontrol
+                  systems, and middleware—to name just a few of the many career
+                  paths available.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -77,30 +79,30 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                <a
-        href="https://www.facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaFacebookF />
-      </a>
-      <a
-        href="https://www.twitter.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaTwitter />
-      </a>
-      <a
-        href="https://www.linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaLinkedinIn />
-      </a>
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
+                    <FaTwitter />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bannerIcon"
+                  >
+                    <FaLinkedinIn />
+                  </a>
                 </div>
               </div>
               <span
@@ -115,6 +117,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
