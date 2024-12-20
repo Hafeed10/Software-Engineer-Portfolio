@@ -10,7 +10,7 @@ import {
   projectTwo3, projectTwo4, projectTwo5, projectTwo6, projectTwo7
 } from '../../assets/index';
 import ProjectsCard from '../project/ProjectCard';
-import './Project.css'
+import './Project.css';
 
 const Projects = () => {
   const projects = [
@@ -67,6 +67,8 @@ const Projects = () => {
         <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" des="My Projects" />
       </div>
       <Swiper
+        effect="slide"
+        loop={true}
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
@@ -74,29 +76,32 @@ const Projects = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         breakpoints={{
-          640: { slidesPerView: 1 },
+          480: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
         className="mt-10"
         onInit={(swiper) => {
-          // Add 'text-designColor' to navigation buttons
           swiper.navigation.nextEl.classList.add('text-designColor');
           swiper.navigation.prevEl.classList.add('text-designColor');
-          // Remove hover effects
           swiper.navigation.nextEl.classList.add('no-hover');
           swiper.navigation.prevEl.classList.add('no-hover');
         }}
       >
-        {projects.map((project, index) => (
-          <SwiperSlide key={index}>
-            <ProjectsCard title={project.title} des={project.des} src={project.src} />
-          </SwiperSlide>
-        ))}
+        {projects.length > 0 ? (
+          projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              <ProjectsCard 
+                title={project.title} 
+                des={project.des} 
+                src={project.src} 
+              />
+            </SwiperSlide>
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No projects available at the moment.</p>
+        )}
       </Swiper>
-
-
-
     </section>
   );
 };
