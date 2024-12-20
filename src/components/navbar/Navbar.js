@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between md:px-24 px-2 space-x-10 items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        {/* <img className='w-full rounded-full p-4 ' src={logo} alt="logo" /> */}
         <h1 className="font-titleFont text-3xl">M.HAFEED</h1>
       </div>
       <div>
@@ -44,14 +43,13 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
+                {/* <img className="w-32" src={logo} alt="logo" /> */}
+                <h1 className="font-titleFont text-3xl">M.HAFEED</h1>
+                <p className="text-sm text-gray-400 mt-4">
                   Software engineers apply engineering principles and knowledge
                   of programming languages to build software solutions for end
                   users. Software engineers design and develop computer games,
-                  business applications, operating systems, networkcontrol
-                  systems, and middleware—to name just a few of the many career
-                  paths available.
+                  business applications.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -61,6 +59,7 @@ const Navbar = () => {
                     className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
                   >
                     <Link
+                      className="flex items-center gap-10"
                       onClick={() => setShowMenu(false)}
                       activeClass="active"
                       to={item.link}
@@ -68,7 +67,10 @@ const Navbar = () => {
                       smooth={true}
                       offset={-70}
                       duration={500}
+                      aria-label={`Navigate to ${item.title}`}
                     >
+                      <span className="text-designColor">{item.icons}</span>{" "}
+                      {/* Icon with color */}
                       {item.title}
                     </Link>
                   </li>

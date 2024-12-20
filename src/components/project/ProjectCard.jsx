@@ -19,18 +19,18 @@ const ProjectsCard = ({ title, des, src }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-      <a
-        href="https://github.com/Hafeed10"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
-      >
-        <BsGithub />
-      </a>
-      <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-      <FaGlobe />
-      </span>
-    </div>
+              <a
+                href="https://github.com/Hafeed10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
+              >
+                <BsGithub />
+              </a>
+              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+                <FaGlobe />
+              </span>
+            </div>
           </div>
           <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
             {des}
