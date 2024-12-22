@@ -40,5 +40,4 @@ const ProjectsCard = ({ title, des, src }) => {
     </div>
   );
 }
-
 export default ProjectsCard

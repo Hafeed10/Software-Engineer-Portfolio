@@ -1,9 +1,7 @@
-import logo from "../assets/images/logo (1).png";
 import bannerImg from "./images/remove.png";
 import projectOne from "./images/projects/net.jpg";
 import projectTwo from "./images/projects/maxresdefault.jpg";
 import projectTwo1 from "./images/projects/2e4b1adf45d6eab3b1167239bb348d6a.jpg";
-// import projectThree from "./images/projects/projectThree.jpeg";
 import testimonialOne from "./images/testmonial/Rashid.jpg";
 import testimonialTwo from "./images/testmonial/Muhammed.jpg";
 import quote from "./images/testmonial/quote.png";
@@ -17,11 +15,9 @@ import projectTwo6 from "./images/projects/wedther.png";
 import projectTwo7 from "./images/projects/2018_OTT_release_1685438570986_1685438575669.webp";
 
 export {
-  logo,
   bannerImg,
   projectOne,
   projectTwo,
-  // projectThree,
   testimonialOne,
   testimonialTwo,
   quote,
