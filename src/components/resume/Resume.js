@@ -9,35 +9,21 @@ import { IoIosArrowDropup, IoIosArrowDropdown } from "react-icons/io";
 // If images are imported, you can do so like this:
 import certificateImage1 from "../../assets/certificet/imag1.jpg";
 import certificateImage2 from "../../assets/certificet/img2.jpg";
-import certificateImage3 from "../../assets/certificet/img3.jpg";
 import certificateImage4 from "../../assets/certificet/img4.jpg";
-import certificateImage5 from "../../assets/certificet/img5.jpg";
-import certificateImage6 from "../../assets/certificet/img6.jpg";
+
 
 const certificates = [
   {
-    title: "Flutter Engineer Certification",
-    imgSrc: certificateImage6, // Image imported for src folder
-  },
-  {
-    title: "UI Engineer Certification",
+    title: "UI Engineer",
     imgSrc: certificateImage1, // Image imported for src folder
   },
   {
-    title: "Backend Developer Certification",
+    title: "Backend Developer",
     imgSrc: certificateImage2, // Example from public folder
   },
   {
-    title: "DevOps Engineer Certification",
-    imgSrc: certificateImage3, // Example from public folder
-  },
-  {
-    title: "Web Application Developer Certification",
+    title: "Web Application Developer",
     imgSrc: certificateImage4, // Example from public folder
-  },
-  {
-    title: "Mobile Application Developer Certification",
-    imgSrc: certificateImage5, // Example from public folder
   },
 ];
 

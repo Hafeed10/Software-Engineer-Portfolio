@@ -10,8 +10,8 @@ import './Project.css';
 
 // Assets for local projects
 import {
-  projectOne, projectTwo, projectTwo1, projectTwo2,
-  projectTwo3, projectTwo4, projectTwo5, projectTwo6, projectTwo7
+  projectOne, 
+  projectTwo3, projectTwo4,
 } from '../../assets/index';
 
 // Data for external projects
@@ -21,49 +21,33 @@ const Projects = () => {
   // Local project data
   const localProjects = [
     {
-      title: "NetFlix Website",
-      des: "Netflix is a streaming service that offers a wide variety...",
+      title: "NetFlix",
       src: projectOne,
     },
     {
-      title: "E-commerce Website",
-      des: "Product Listings: Displays items with images...",
-      src: projectTwo,
+      title: "Powersaff-Ecommerce ",
+      src: "https://themefisher.com/blog-thumb/e-commerce-website-admin-panel-templates.webp",
     },
     {
-      title: "WORLD_TOUR APP",
-      des: "The DP World Tour Championship is a golf tournament...",
-      src: projectTwo1,
+      title: "World Tour App",
+      src:"https://media.istockphoto.com/id/505018708/vector/concept-of-the-world-adventure-travel.jpg?s=612x612&w=0&k=20&c=TeSuBv228r6vrxH5OH-EQIWU4LLx6brii-4GzzFPaoo=",
     },
     {
-      title: "BLOG APP",
-      des: "Find out which posts are a hit with Blogger’s built-in...",
-      src: projectTwo2,
-    },
-    {
-      title: "Patch Website",
-      des: "A patch website refers to a site that offers patches...",
+      title: "Patch ",
       src: projectTwo3,
     },
     {
-      title: "Venom Website",
-      des: "Snake venoms are complex mixtures of enzymes...",
+      title: "Venom ",
       src: projectTwo4,
     },
     {
-      title: "Bitbucket Website",
-      des: "Bitbucket is a Git-based source code repository...",
-      src: projectTwo5,
+      title: "Bitbucket",
+      src: "https://www.cybereason.com/hubfs/bitbucket-blog-image.png",
     },
+    
     {
-      title: "Weather-App",
-      des: "The weather app also provides atmospheric pressure...",
-      src: projectTwo6,
-    },
-    {
-      title: "Tovino_Movies Website",
-      des: "Tovino Thomas is an Indian actor and film producer...",
-      src: projectTwo7,
+      title: "Tovino Movies ",
+      src:"https://www.pinkvilla.com/images/2024-08/775421139_arm-trailer.jpg",
     },
   ];
 
@@ -100,7 +84,6 @@ const Projects = () => {
               <SwiperSlide key={index}>
                 <ProjectsCard
                   title={project.title}
-                  des={project.des}
                   src={project.src}
                 />
               </SwiperSlide>

@@ -8,10 +8,12 @@
 .swiper-button-prev {
   color: #ff014f;
   background: none;
+   display: none;
 }
 .swiper-button-next.no-hover:hover,
 .swiper-button-prev.no-hover:hover {
   background: none; 
+   display: none;
 }
 
 /* Customize pagination dots */
@@ -22,5 +24,6 @@
 }
 .swiper-pagination-bullet-active {
   background-color: #ff014f;
+ 
   opacity: 1;
 }

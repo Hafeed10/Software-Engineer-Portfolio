@@ -1,37 +1,41 @@
-import React from 'react'
+import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import logo from "../../assets/image12.png"
+import logo from "../../assets/image12.png";
 
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32" src={logo} alt="logo" />
+        <h1 className="font-bold text-3xl">M HAFEED</h1>
+        <p>
+         A day in the life of a Software Engineer  Key skills and tools a
+         Software Engineer uses .
+        </p>
         <div className="flex gap-4">
-        <a
-        href="https://www.facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaFacebookF />
-      </a>
-      <a
-        href="https://www.twitter.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaTwitter />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/muhammed-hafeed-2ba950312/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bannerIcon"
-      >
-        <FaLinkedinIn />
-      </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammed-hafeed-2ba950312/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
+            <FaLinkedinIn />
+          </a>
         </div>
       </div>
       <div className="w-full h-full">
@@ -147,6 +151,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

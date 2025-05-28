@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResumeCard = ({title,subTitle,result,des}) => {
+const ResumeCard = ({title,subTitle,result,des,company}) => {
   return (
     <div className="w-full h-1/3 group flex">
       <div className="w-10 h-[6px] bgOpacity mt-16 relative">
@@ -14,6 +14,10 @@ const ResumeCard = ({title,subTitle,result,des}) => {
             <h3 className="text-xl md:text-2xl font-semibold group-hover:text-white duration-300">
               {title}
             </h3>
+             <p className="text-md mt-2 text-designColor group-hover:text-white duration-300">
+              <span className=' text-gray-400 gap-5'>Company :</span>
+              {company}
+            </p>
             <p className="text-sm mt-2 text-gray-400 group-hover:text-white duration-300">
               {subTitle}
             </p>
