@@ -1,6 +1,5 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import logo from "../../assets/image12.png";
 
 const Footer = () => {
   return (
@@ -29,7 +28,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.linkedin.com/in/muhammed-hafeed-2ba950312/"
+            href="www.linkedin.com/in/hafeed"
             target="_blank"
             rel="noopener noreferrer"
             className="bannerIcon"

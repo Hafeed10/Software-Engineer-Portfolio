@@ -1,5 +1,5 @@
 import React from 'react'
-import  bannerImg  from "../../assets/App data-amico.svg"; 
+import  bannerImg  from "../../assets/Coding-bro.png"; 
 
 const RightBanner = () => {
   return (

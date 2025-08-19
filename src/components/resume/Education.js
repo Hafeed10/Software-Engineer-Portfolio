@@ -1,80 +1,72 @@
-import React from 'react'
-import { motion } from 'framer-motion';
-import ResumeCard from './ResumeCard';
+import React from "react";
+import { motion } from "framer-motion";
+import ResumeCard from "./ResumeCard";
 
 const Education = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lg:flex-row gap-10 lg:gap-10"
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+      className="w-full flex flex-col lg:flex-row gap-10"
     >
-      {/* part one */}
-      <div>
-        <div className="py-6 lg:py-12 font-titleFont flex flex-col gap-4">
+      {/* Education Section */}
+      <section className="w-full lg:w-1/2 p-2 rounded-2xl shadow-md">
+        <div className="py-6 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2022 - 2025</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Education</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10 pl-4">
           <ResumeCard
-            title="BCA in Bachelor of Computer Applications"
-            company='Only College'
-            subTitle="Indira Gandhi National Open University (2023 - 2025)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            title="BCA - Bachelor of Computer Applications"
+            company="Indira Gandhi National Open University"
+            subTitle="2023 - 2025"
+            result="4/5"
+            des="Studying computer science fundamentals, software development, and IT concepts to prepare for professional roles in technology and software engineering."
           />
           <ResumeCard
-            title="STEYP- Technology & Information"
-             company='Only Tech Degree'
-            subTitle="Tech Degree (2023 - 2024)"
-            result="4.75/5"
-            des="Steyp is a Digital University for students to learn and become Computer Engineers and Tech Scientists irrespective of their age or educational background."
+            title="STEYP - Technology & Information"
+            company="Steyp Digital University"
+            subTitle="2023 - 2024"
+            result="5/5"
+            des="Completed a digital program focused on advanced computer engineering, modern web technologies, and real-world hands-on projects."
           />
           <ResumeCard
-            title="CYRA- Technology & Information"
-            company='Only Tech Degree'
-            subTitle="Tech Degree (2024)"
-            result="6.00/5"
-            des="
-              Flutter is an open-source UI software development toolkit created by Google.
-              It is used to build natively compiled applications for mobile, web, and desktop
-              from a single codebase. Flutter is built using the Dart programming language."
+            title="CYRA - Flutter Development Program"
+            company="CYRA Digital Training"
+            subTitle="2024"
+            result="5/5"
+            des="Completed a Flutter development program, focusing on cross-platform application design. Gained expertise in building mobile, web, and desktop apps from a single Dart-based codebase."
           />
         </div>
-      </div>
-      {/* part Two */}
+      </section>
 
-      <div>
-        <div className="py-6 lg:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2023 - 2025</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+      {/* Experience Section */}
+      <section className="w-full lg:w-1/2 p-2 rounded-2xl shadow-md">
+        <div className="py-6 font-titleFont flex flex-col gap-4">
+          <p className="text-sm text-designColor tracking-[4px]">2023 - Present</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Experience</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10 pl-4">
           <ResumeCard
             title="Freelancer"
-            company='Null'
-            subTitle="Freelance Working - (2023-2025 - Present) "
+            company="Remote / Self-employed"
+            subTitle="2023 - 2025"
+            subeTitle="Full-Stack Web Developer"
             result="5/5"
-            des="popular destination with a growing  care deeply about their teams and the people who make them up."
+            des="Worked collaboratively with designers, developers, and clients in remote settings, ensuring seamless project execution."
           />
           <ResumeCard
-            title="Full Stack Developer"
-             company='Powersaff'
-            subTitle="Freelance Working - (2024-2025 - Present)"
+            title="Trizo Creatives Developer"
+            company="Trizo Creatives"
+            subeTitle="React Developer"
+            subTitle="2023 - 2024"
             result="5/5"
-            des="popular destination with a growing  care deeply about their teams and the people who make them up."
-          />
-         <ResumeCard
-            title="React Developer"
-            company='Trizo Creatives'
-            subTitle="Freelance Working - (2023-2024 - Present)"
-            result="5/5"
-            des="popular destination with a growing  care deeply about their teams and the people who make them up."
+            des="Developed and optimized user interfaces using React.js, collaborated with cross-functional teams, and implemented responsive, pixel-perfect designs for client projects."
           />
         </div>
-      </div>
+      </section>
     </motion.div>
   );
-}
+};
 
-export default Education
+export default Education;

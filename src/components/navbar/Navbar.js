@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { navLinksdata } from "../../constants";
 
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (

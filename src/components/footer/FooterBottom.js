@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const FooterBottom = () => {
   return (
-    <div className="w-full py-10">
-      <p className="text-center text-gray-500 text-base">
-        © 2023. All rights reserved by Hafeed Muhammed
+    <footer className="w-full py-6 bg-black">
+      <p className="text-center text-gray-400 text-sm md:text-base">
+        © {new Date().getFullYear()} Hafeed Muhammed. All rights reserved.
       </p>
-    </div>
+    </footer>
   );
-}
+};
 
-export default FooterBottom
+export default FooterBottom;

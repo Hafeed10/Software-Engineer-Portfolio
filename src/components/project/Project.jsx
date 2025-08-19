@@ -1,98 +1,76 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Title from '../layouts/Title';
 import ProjectsCard from '../project/ProjectCard';
 import './Project.css';
-
-// Assets for local projects
-import {
-  projectOne, 
-  projectTwo3, projectTwo4,
-} from '../../assets/index';
-
-// Data for external projects
-import { project as externalProjects } from './ProjectData';
 
 const Projects = () => {
   // Local project data
   const localProjects = [
     {
-      title: "NetFlix",
-      src: projectOne,
-    },
-    {
-      title: "Powersaff-Ecommerce ",
+      title: "Powersaff Ecommerce",
       src: "https://themefisher.com/blog-thumb/e-commerce-website-admin-panel-templates.webp",
+      link: "https://powersaff.in/",
+      github: "https://github.com/Hafeed10/powersaff-ecommerce"
     },
     {
-      title: "World Tour App",
-      src:"https://media.istockphoto.com/id/505018708/vector/concept-of-the-world-adventure-travel.jpg?s=612x612&w=0&k=20&c=TeSuBv228r6vrxH5OH-EQIWU4LLx6brii-4GzzFPaoo=",
+      title: "Books App",
+      src: "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150063081.jpg",
+      link: "https://books-app-roan-omega.vercel.app/",
+      github: "https://github.com/Hafeed10/Books-App"
     },
     {
-      title: "Patch ",
-      src: projectTwo3,
+      title: "Ecommerce Website",
+      src: "https://t4.ftcdn.net/jpg/06/22/39/91/360_F_622399137_jlEDsEN0pUMZA6jMKShRoq2po69QBQXj.jpg",
+      link: "#",
+      github: "https://github.com/Hafeed10/Full-Stack-Ecommerce-Website"
     },
     {
-      title: "Venom ",
-      src: projectTwo4,
+      title: "Fashion Style",
+      src: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3Vwd2s2MTg0MzM0NC13aWtpbWVkaWEtaW1hZ2UtbGtocWw2YWIuanBn.jpg",
+      link: "https://fashion-style-lac.vercel.app/",
+      github: "https://github.com/Hafeed10/Fashion-Style"
     },
     {
-      title: "Bitbucket",
-      src: "https://www.cybereason.com/hubfs/bitbucket-blog-image.png",
+      title: "AI Chatbot",
+      src: "https://media.istockphoto.com/id/1465545513/photo/chatbot.jpg?s=612x612&w=0&k=20&c=3IZrVSv95FmcHt744wvcvZiml1LXTnEQimq_3V5CCbQ=",
+      link: "https://ai-chatbot-phi-two.vercel.app/",
+      github: "https://github.com/Hafeed10/Ai-Chatbot"
     },
-    
     {
-      title: "Tovino Movies ",
-      src:"https://www.pinkvilla.com/images/2024-08/775421139_arm-trailer.jpg",
+      title: "Education AI Bot",
+      src: "https://img.freepik.com/free-photo/woman-hanging-out-with-robot_23-2151112154.jpg",
+      link: "https://education-ai-bot.vercel.app/",
+      github: "https://github.com/Hafeed10/Education-Ai-Bot"
     },
   ];
 
-  // Swiper configuration
-  const swiperConfig = {
-    effect: "slide",
-    loop: true,
-    modules: [Navigation, Pagination, Autoplay],
-    spaceBetween: 30,
-    slidesPerView: 1,
-    navigation: true,
-    pagination: { clickable: true },
-    autoplay: { delay: 3000 },
-    breakpoints: {
-      480: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-  };
-
-  // Combine local and external project data for display
-  const projectLists = [localProjects, externalProjects];
-
   return (
-    <section id="projects" className="w-full py-20 border-b-[1px] border-b-black">
-      <div className="flex justify-center items-center text-center">
-        <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" des="My Projects" />
+    <section id="projects" className="w-full py-20 border-b border-black">
+      <div className="flex justify-center items-center text-center mb-10">
+        <Title
+          title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+          des="My Projects"
+        />
       </div>
 
-      {projectLists.map((projectList, idx) => (
-        <Swiper key={idx} {...swiperConfig} className="mt-10">
-          {projectList.length > 0 ? (
-            projectList.map((project, index) => (
-              <SwiperSlide key={index}>
-                <ProjectsCard
-                  title={project.title}
-                  src={project.src}
-                />
-              </SwiperSlide>
-            ))
-          ) : (
-            <p className="text-center text-gray-500">No projects available at the moment.</p>
-          )}
-        </Swiper>
-      ))}
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+        {localProjects.length > 0 ? (
+          localProjects.map((project, index) => (
+            <ProjectsCard
+              key={index}
+              title={project.title}
+              src={project.src}
+              link={project.link}     // live demo
+              github={project.github} // GitHub repo
+              des={project.des}       // optional
+            />
+          ))
+        ) : (
+          <p className="text-center text-gray-500 mt-6">
+            No projects available at the moment.
+          </p>
+        )}
+      </div>
     </section>
   );
 };

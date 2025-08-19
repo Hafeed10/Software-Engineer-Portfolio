@@ -22,7 +22,7 @@ export const navLinksdata = [
   {
     _id: 1004,
     icons: <FaArrowRight />,
-    title: "Resume",
+    title: "My Port",
     link: "resume",
   },
   {
