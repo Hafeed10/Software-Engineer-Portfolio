@@ -42,6 +42,18 @@ const Projects = () => {
       link: "https://education-ai-bot.vercel.app/",
       github: "https://github.com/Hafeed10/Education-Ai-Bot"
     },
+    {
+      title: "Password Generator",
+      src: "https://miro.medium.com/v2/resize:fit:1400/1*qG3aD5Se4fxi8d_OEfbSmA.jpeg",
+      link: "https://password-generator-phi-wine.vercel.app/",
+      github: "https://github.com/Hafeed10/Mini-Project-Password-Generator"
+    },
+    {
+      title: "Content Writing Services",
+      src: "https://img.freepik.com/free-photo/notepad-laptop-concept_23-2147982617.jpg",
+      link: "https://computher-app.vercel.app/index.html",
+      github: "https://github.com/Hafeed10/Computher-App"
+    },
   ];
 
   return (
