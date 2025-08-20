@@ -14,12 +14,11 @@ Built using **React, Tailwind CSS, and Framer Motion** for smooth animations and
 1. [Features](#-features)
 2. [Tech Stack](#-tech-stack)
 3. [Project Structure](#-project-structure)
-4. [Screenshots](#-screenshots)
-5. [Getting Started](#-getting-started)
-6. [Available Scripts](#-available-scripts)
-7. [Deployment](#-deployment)
-8. [Contributing](#-contributing)
-9. [License](#-license)
+4. [Getting Started](#-getting-started)
+5. [Available Scripts](#-available-scripts)
+6. [Deployment](#-deployment)
+7. [Contributing](#-contributing)
+8. [License](#-license)
 
 ---
 
@@ -73,36 +72,36 @@ project-update-2.0/
 
 ## ⚡ Getting Started
 
-Clone the repository:
+Repository:
 ```bash
-git clone https://github.com/Hafeed10/project-update-2.0.git
-cd project-update-2.0
+https://github.com/Hafeed10/Software-Engineer-Portfolio.git
+
 
 npm install
 npm start
 npm run build
 
 📜 Available Scripts
-npm start → Runs app in development mode
-npm run build → Builds app for production
-npm run test → Launches test runner
-npm run eject → Ejects configuration (⚠ irreversible)
+  npm start → Runs app in development mode
+  npm run build → Builds app for production
+  npm run test → Launches test runner
+  npm run eject → Ejects configuration (⚠ irreversible)
 
 
 🌍 Deployment
-This project can be easily deployed on:
-Vercel
-Netlify
-GitHub Pages
+  This project can be easily deployed on:
+  Vercel
+  Netlify
+  GitHub Pages
 
 🤝 Contributing
-Contributions are welcome!
-Fork this repo
-Create your feature branch: git checkout -b feature-name
-Commit changes: git commit -m "Add feature"
-Push to branch: git push origin feature-name
-Submit a Pull Request
+  Contributions are welcome!
+  Fork this repo
+  Create your feature branch: git checkout -b feature-name
+  Commit changes: git commit -m "Add feature"
+  Push to branch: git push origin feature-name
+  Submit a Pull Request
 
 📜 License
-This project is licensed under the MIT License - see the LICENSE
- file for details.
+  This project is licensed under the MIT License - see the LICENSE
+  file for.
