@@ -76,10 +76,12 @@ Repository:
 ```bash
 https://github.com/Hafeed10/Software-Engineer-Portfolio.git
 
-
-npm install
-npm start
-npm run build
+Install dependencies:
+  npm install
+Run development server:
+  npm start
+Build for production:
+  npm run build
 
 📜 Available Scripts
   npm start → Runs app in development mode
