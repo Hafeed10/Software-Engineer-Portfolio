@@ -1,1 +1,134 @@
+# 🚀 Portfolio Website 2.0
 
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/FramerMotion-Animation-ff69b4?logo=framer)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+A modern **portfolio website** showcasing projects, skills, and experience.  
+Built using **React, Tailwind CSS, and Framer Motion** for smooth animations and responsive design.
+
+---
+
+## 📑 Table of Contents
+1. [Features](#-features)
+2. [Tech Stack](#-tech-stack)
+3. [Project Structure](#-project-structure)
+4. [Screenshots](#-screenshots)
+5. [Getting Started](#-getting-started)
+6. [Available Scripts](#-available-scripts)
+7. [Deployment](#-deployment)
+8. [Contributing](#-contributing)
+9. [License](#-license)
+
+---
+
+## ✨ Features
+- 🎨 Clean, modern, responsive UI
+- ⚡ Fast performance with React 18
+- 🌙 Dark/light theme ready (Tailwind support)
+- 🎥 Smooth animations (Framer Motion)
+- 🔗 Smooth scrolling navigation
+- 📂 Project showcase with details
+- 📜 Resume timeline
+- ⭐ Testimonials section
+- 📬 Contact form
+- 📌 Footer with social media links
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React 18, React DOM
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Other:** React Scroll, Slick Carousel
+
+---
+
+## 📂 Project Structure
+project-update-2.0/
+│
+├── public/ # Static files
+├── src/ # Source code
+│ ├── components/ # Reusable components
+│ │ ├── banner/ # Hero banner
+│ │ ├── contact/ # Contact form
+│ │ ├── features/ # Skills/features
+│ │ ├── footer/ # Footer + FooterBottom
+│ │ ├── navbar/ # Navigation bar
+│ │ ├── project/ # Projects showcase
+│ │ ├── resume/ # Resume section
+│ │ ├── testimonial/ # Testimonials
+│ ├── App.js # Main App component
+│ ├── index.js # ReactDOM entry
+│
+├── tailwind.config.js # Tailwind configuration
+├── package.json # Dependencies & scripts
+└── README.md # Documentation
+
+
+---
+
+## 📸 Screenshots
+
+### Home / Banner
+![Banner Screenshot](https://via.placeholder.com/1000x500.png?text=Banner+Screenshot)
+
+### Features
+![Features Screenshot](https://via.placeholder.com/1000x500.png?text=Features+Screenshot)
+
+### Projects
+![Projects Screenshot](https://via.placeholder.com/1000x500.png?text=Projects+Screenshot)
+
+### Contact
+![Contact Screenshot](https://via.placeholder.com/1000x500.png?text=Contact+Screenshot)
+
+---
+
+## ⚡ Getting Started
+
+Clone the repository:
+```bash
+git clone https://github.com/Hafeed10/project-update-2.0.git
+cd project-update-2.0
+npm install
+npm start
+npm run build
+📜 Available Scripts
+
+npm start → Runs app in development mode
+
+npm run build → Builds app for production
+
+npm run test → Launches test runner
+
+npm run eject → Ejects configuration (⚠ irreversible)
+
+🌍 Deployment
+
+This project can be easily deployed on:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork this repo
+
+Create your feature branch: git checkout -b feature-name
+
+Commit changes: git commit -m "Add feature"
+
+Push to branch: git push origin feature-name
+
+Submit a Pull Request
+📜 License
+
+This project is licensed under the MIT License - see the LICENSE
+ file for details.
