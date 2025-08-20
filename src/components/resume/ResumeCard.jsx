@@ -15,7 +15,7 @@ const ResumeCard = ({title,subTitle,result,des,company,subeTitle}) => {
               {title}
             </h3>
              <p className="text-md mt-2 text-designColor group-hover:text-white duration-300">
-              <span className=' text-gray-400 gap-5'>Company :</span>
+              <span className=' text-gray-400 gap-5'></span>
               {company}
             </p>
             <p className="text-sm mt-2 text-gray-400 group-hover:text-white duration-300">

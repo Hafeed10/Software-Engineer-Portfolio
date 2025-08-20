@@ -1,25 +1,42 @@
 import React from "react";
-import Banner from "../src/components/banner/Banner";
-import Contact from "../src/components/contact/Contact";
-import Features from "../src/components/features/Features";
-import Footer from "../src/components/footer/Footer";
-import FooterBottom from "../src/components/footer/FooterBottom";
-import Navbar from "../src/components/navbar/Navbar";
-import Projects from "../src/components/project/Project";
-import Resume from "../src/components/resume/Resume";
-import Testimonial from "../src/components/tesimonial/Testimonial";
+import { Routes, Route } from "react-router-dom";
+
+import Banner from "./components/banner/Banner";
+import Contact from "./components/contact/Contact";
+import Features from "./components/features/Features";
+import Footer from "./components/footer/Footer";
+import FooterBottom from "./components/footer/FooterBottom";
+import Navbar from "./components/navbar/Navbar";
+import Projects from "./components/project/Project";
+import Resume from "./components/resume/Resume";
+import Testimonial from "./components/tesimonial/Testimonial";
+import ViewProjects from "./components/project/ViewProjects";
 
 function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText px-4">
-        <Navbar />
-      <div className="max-w-screen-xl mx-auto ">
-        <Banner />
-        <Features />
-        <Projects />
-        <Resume />
-        <Testimonial />
-        <Contact />
+      <Navbar />
+      <div className="max-w-screen-xl mx-auto">
+        <Routes>
+          {/* Home Page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner />
+                <Features />
+                <Projects />
+                <Resume />
+                <Testimonial />
+                <Contact />
+              </>
+            }
+          />
+
+          {/* View Project Page */}
+          <Route path="/viewprojects" element={<ViewProjects />} />
+        </Routes>
+
         <Footer />
         <FooterBottom />
       </div>
