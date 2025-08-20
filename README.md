@@ -1,4 +1,4 @@
-# 🚀 Portfolio Website 2.0
+#  Software-Engineer-Portfolio
 
 ![React](https://img.shields.io/badge/React-18-blue?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?logo=tailwind-css)
@@ -70,21 +70,6 @@ project-update-2.0/
 
 ---
 
-## 📸 Screenshots
-
-### Home / Banner
-![Banner Screenshot](https://via.placeholder.com/1000x500.png?text=Banner+Screenshot)
-
-### Features
-![Features Screenshot](https://via.placeholder.com/1000x500.png?text=Features+Screenshot)
-
-### Projects
-![Projects Screenshot](https://via.placeholder.com/1000x500.png?text=Projects+Screenshot)
-
-### Contact
-![Contact Screenshot](https://via.placeholder.com/1000x500.png?text=Contact+Screenshot)
-
----
 
 ## ⚡ Getting Started
 
@@ -92,43 +77,32 @@ Clone the repository:
 ```bash
 git clone https://github.com/Hafeed10/project-update-2.0.git
 cd project-update-2.0
+
 npm install
 npm start
 npm run build
+
 📜 Available Scripts
-
 npm start → Runs app in development mode
-
 npm run build → Builds app for production
-
 npm run test → Launches test runner
-
 npm run eject → Ejects configuration (⚠ irreversible)
 
+
 🌍 Deployment
-
 This project can be easily deployed on:
-
 Vercel
-
 Netlify
-
 GitHub Pages
 
 🤝 Contributing
-
 Contributions are welcome!
-
 Fork this repo
-
 Create your feature branch: git checkout -b feature-name
-
 Commit changes: git commit -m "Add feature"
-
 Push to branch: git push origin feature-name
-
 Submit a Pull Request
-📜 License
 
+📜 License
 This project is licensed under the MIT License - see the LICENSE
  file for details.
